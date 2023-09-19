@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: tdcdemo 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tdcdemo
+  template:
+    metadata:
+      labels:
+        app: tdcdemo 
+    spec:
+      containers:
+        - name: tdcdemo 
+          image: acrtdc.azurecr.io/tdcdemo
+          ports:
+          - containerPort: 5299
