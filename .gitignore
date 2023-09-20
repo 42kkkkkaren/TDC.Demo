@@ -1,0 +1,24 @@
+# .NET Core
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.user
+*.vscode
+*.vs
+*.suo
+*.cache
+*.log
+*.vspscc
+*.vssscc
+/.vs
+/.vscode
+
+# Docker
+docker-compose.yml
+docker-compose.override.yml
+docker-compose.vs.debug.yml
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/settings.json
